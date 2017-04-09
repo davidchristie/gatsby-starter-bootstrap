@@ -10,7 +10,6 @@ guid: http://jaxx2104.info/?page_id=1380
 image: /wp/images/2014/12/b0edb59d97976fb1c698b9997460f6e3-e1458137465824.jpg
 ---
 
-
 <section class="text-center">
   <div class="container">
     <img src="iwa.jpg" alt="jaxx2104" class="rounded-circle mx-auto d-block" width="120px">
