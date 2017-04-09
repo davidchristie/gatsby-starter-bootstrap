@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import 'static/scss/gatsrap.scss'
 
-import SiteNavi from '../components/SiteNavi'
+import Navbar from '../components/Navbar'
 
 class Template extends React.Component {
   componentDidMount () {
@@ -23,7 +23,7 @@ class Template extends React.Component {
     const { children } = this.props
     return (
       <div>
-        <SiteNavi title={config.siteTitle} {...this.props} />
+        <Navbar title={config.siteTitle} {...this.props} />
         {children}
       </div>
     )

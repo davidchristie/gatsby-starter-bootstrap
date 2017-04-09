@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'react-router'
 
-import './style.css'
+import PrefixedLink from '../PrefixedLink'
 
-class SiteNavi extends React.Component {
+class Navbar extends React.Component {
   render () {
     const { location, title } = this.props
     return (
@@ -14,14 +14,16 @@ class SiteNavi extends React.Component {
           <span className='navbar-toggler-icon' />
         </button>
         <div className='container'>
-          <Link className='text-center' to={prefixLink('/')}><h1 className='navbar-brand mb-0'>{title}</h1></Link>
+          <PrefixedLink className='text-center' to={prefixLink('/')}><h1 className='navbar-brand mb-0'>{title}</h1></PrefixedLink>
           <div className='navbar-collapse collapse' id='navbarColor02' aria-expanded='false'>
             <ul className='navbar-nav mr-auto'>
               <li className={location.pathname === prefixLink('/') ? 'nav-item active' : 'nav-item'}>
                 <Link to={prefixLink('/')} className='nav-link'>Home</Link>
               </li>
               <li className={location.pathname === prefixLink('/profile/') ? 'nav-item active' : 'nav-item'}>
-                <Link to={prefixLink('/profile/')} className='nav-link'>Profile</Link>
+                <PrefixedLink className='nav-link' to='/profile/'>
+                  Profile
+                </PrefixedLink>
               </li>
               <li className='nav-item dropdown'>
                 <a className='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
@@ -37,13 +39,21 @@ class SiteNavi extends React.Component {
           </div>
         </div>
       </nav>
-
     )
   }
 }
 
-SiteNavi.propTypes = {
-  location: PropTypes.object
+Navbar.defaultProps = {
+  location: {
+    pathname: ''
+  }
 }
 
-export default SiteNavi
+Navbar.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  }).isRequired,
+  title: PropTypes.string
+}
+
+export default Navbar

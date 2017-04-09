@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches render snapshot 1`] = `
+<nav
+  className="navbar sticky-top navbar-toggleable-sm navbar-inverse bg-danger"
+>
+  <button
+    aria-controls="navbarColor02"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    className="navbar-toggler navbar-toggler-right collapsed"
+    data-target="#navbarColor02"
+    data-toggle="collapse"
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    className="container"
+  >
+    <a
+      className="text-center"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <h1
+        className="navbar-brand mb-0"
+      />
+    </a>
+    <div
+      aria-expanded="false"
+      className="navbar-collapse collapse"
+      id="navbarColor02"
+    >
+      <ul
+        className="navbar-nav mr-auto"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Profile
+          </a>
+        </li>
+        <li
+          className="nav-item dropdown"
+        >
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            className="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            id="navbarDropdownMenuLink"
+          >
+            Link
+          </a>
+          <div
+            aria-labelledby="navbarDropdownMenuLink"
+            className="dropdown-menu bg-danger"
+          >
+            <a
+              className="dropdown-item"
+              href="https://github.com/jaxx2104/"
+            >
+              Github
+            </a>
+            <a
+              className="dropdown-item"
+              href="https://twitter.com/jaxx2104"
+            >
+              Twitter
+            </a>
+            <a
+              className="dropdown-item"
+              href="https://www.facebook.com/futoshi.iwashita"
+            >
+              Facebook
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+`;

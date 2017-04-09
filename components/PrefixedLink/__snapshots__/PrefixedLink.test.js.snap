@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches render snapshot 1`] = `
+<a
+  className={undefined}
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;
